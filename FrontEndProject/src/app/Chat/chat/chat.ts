@@ -42,6 +42,23 @@ export class Chat implements OnInit, AfterViewChecked, OnDestroy {
     this.aiService.warmup().subscribe();
   }
 
+  /** Clears the conversation and returns to the welcome (home) screen. */
+  goHome(): void {
+    if (this.listening && this.recognition) {
+      try {
+        this.recognition.stop();
+      } catch {
+        /* ignore */
+      }
+      this.listening = false;
+    }
+    this.messages = [];
+    this.question = '';
+    this.loading = false;
+    this.uploading = false;
+    this.shouldScroll = false;
+  }
+
   ngAfterViewChecked(): void {
     if (this.shouldScroll) {
       this.scrollToBottom();

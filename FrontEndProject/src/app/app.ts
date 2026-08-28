@@ -1,4 +1,5 @@
-import { Component, signal } from '@angular/core';
+import { Component, ViewChild, signal } from '@angular/core';
+import { Chat } from './Chat/chat/chat';
 
 @Component({
   selector: 'app-root',
@@ -8,4 +9,10 @@ import { Component, signal } from '@angular/core';
 })
 export class App {
   protected readonly title = signal('FrontEndProject');
+
+  @ViewChild(Chat) private chat?: Chat;
+
+  goHome(): void {
+    this.chat?.goHome();
+  }
 }

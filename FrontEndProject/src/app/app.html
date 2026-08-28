@@ -1,11 +1,20 @@
 <div class="app-shell">
   <header class="app-header">
     <div class="header-content">
-      <div class="logo">
-        <span class="logo-icon">&#x2728;</span>
-        <h1>EC-Group Smart AI</h1>
-      </div>
+      <button type="button" class="logo" (click)="goHome()" title="Back to home" aria-label="EC - Smart Hr AI home">
+        <span class="logo-icon" aria-hidden="true">&#x2728;</span>
+        <h1>EC - Smart Hr AI</h1>
+      </button>
       <div class="header-right">
+        <button
+          type="button"
+          class="home-link"
+          (click)="goHome()"
+          title="Back to home"
+          aria-label="Back to home"
+        >
+          Home
+        </button>
         <div class="user-info" title="Logged in member">
           <span class="user-avatar">N</span>
           <span class="user-name">Naveen</span>
