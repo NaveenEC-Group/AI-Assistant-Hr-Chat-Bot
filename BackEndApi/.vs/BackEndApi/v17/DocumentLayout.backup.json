@@ -7,12 +7,24 @@
       "RelativeMoniker": "D:0:0:{DE785A3F-1620-41C7-BA3C-EDD113598806}|BackEndApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DE785A3F-1620-41C7-BA3C-EDD113598806}|BackEndApi.csproj|d:\\team week ai\\backendapi\\services\\aiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE785A3F-1620-41C7-BA3C-EDD113598806}|BackEndApi.csproj|solutionrelative:services\\aiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DE785A3F-1620-41C7-BA3C-EDD113598806}|BackEndApi.csproj|d:\\team week ai\\backendapi\\services\\embeddingcontextretriever.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE785A3F-1620-41C7-BA3C-EDD113598806}|BackEndApi.csproj|solutionrelative:services\\embeddingcontextretriever.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DE785A3F-1620-41C7-BA3C-EDD113598806}|BackEndApi.csproj|d:\\team week ai\\backendapi\\services\\aiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE785A3F-1620-41C7-BA3C-EDD113598806}|BackEndApi.csproj|solutionrelative:services\\aiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DE785A3F-1620-41C7-BA3C-EDD113598806}|BackEndApi.csproj|d:\\team week ai\\backendapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{DE785A3F-1620-41C7-BA3C-EDD113598806}|BackEndApi.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE785A3F-1620-41C7-BA3C-EDD113598806}|BackEndApi.csproj|d:\\team week ai\\backendapi\\services\\openaiembeddingclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE785A3F-1620-41C7-BA3C-EDD113598806}|BackEndApi.csproj|solutionrelative:services\\openaiembeddingclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE785A3F-1620-41C7-BA3C-EDD113598806}|BackEndApi.csproj|d:\\team week ai\\backendapi\\backendapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{DE785A3F-1620-41C7-BA3C-EDD113598806}|BackEndApi.csproj|solutionrelative:backendapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE785A3F-1620-41C7-BA3C-EDD113598806}|BackEndApi.csproj|d:\\team week ai\\backendapi\\data\\knowledgebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DE785A3F-1620-41C7-BA3C-EDD113598806}|BackEndApi.csproj|d:\\team week ai\\backendapi\\services\\knowledgebasewriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE785A3F-1620-41C7-BA3C-EDD113598806}|BackEndApi.csproj|solutionrelative:services\\knowledgebasewriter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE785A3F-1620-41C7-BA3C-EDD113598806}|BackEndApi.csproj|d:\\team week ai\\backendapi\\services\\openaiembeddingclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE785A3F-1620-41C7-BA3C-EDD113598806}|BackEndApi.csproj|solutionrelative:services\\openaiembeddingclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE785A3F-1620-41C7-BA3C-EDD113598806}|BackEndApi.csproj|d:\\team week ai\\backendapi\\controllers\\aicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,11 +46,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 544,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "AiService.cs",
               "DocumentMoniker": "D:\\Team Week AI\\BackEndApi\\Services\\AiService.cs",
               "RelativeDocumentMoniker": "Services\\AiService.cs",
@@ -51,24 +59,25 @@
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwBcAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-05T13:48:46.509Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "EmbeddingContextRetriever.cs",
               "DocumentMoniker": "D:\\Team Week AI\\BackEndApi\\Services\\EmbeddingContextRetriever.cs",
               "RelativeDocumentMoniker": "Services\\EmbeddingContextRetriever.cs",
               "ToolTip": "D:\\Team Week AI\\BackEndApi\\Services\\EmbeddingContextRetriever.cs",
               "RelativeToolTip": "Services\\EmbeddingContextRetriever.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAzwBwAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBwAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-07T15:17:26.295Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "KnowledgeBase.cs",
               "DocumentMoniker": "D:\\Team Week AI\\BackEndApi\\Data\\KnowledgeBase.cs",
               "RelativeDocumentMoniker": "Data\\KnowledgeBase.cs",
@@ -121,36 +130,23 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Team Week AI\\BackEndApi\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Team Week AI\\BackEndApi\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-11T07:55:35.605Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "OpenAiEmbeddingClient.cs",
               "DocumentMoniker": "D:\\Team Week AI\\BackEndApi\\Services\\OpenAiEmbeddingClient.cs",
               "RelativeDocumentMoniker": "Services\\OpenAiEmbeddingClient.cs",
               "ToolTip": "D:\\Team Week AI\\BackEndApi\\Services\\OpenAiEmbeddingClient.cs",
               "RelativeToolTip": "Services\\OpenAiEmbeddingClient.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-21T13:04:23.135Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "KnowledgeBaseWriter.cs",
               "DocumentMoniker": "D:\\Team Week AI\\BackEndApi\\Services\\KnowledgeBaseWriter.cs",
               "RelativeDocumentMoniker": "Services\\KnowledgeBaseWriter.cs",
@@ -162,7 +158,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Team Week AI\\BackEndApi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Team Week AI\\BackEndApi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T07:55:35.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BackEndApi",
+              "DocumentMoniker": "D:\\Team Week AI\\BackEndApi\\BackEndApi.csproj",
+              "RelativeDocumentMoniker": "BackEndApi.csproj",
+              "ToolTip": "D:\\Team Week AI\\BackEndApi\\BackEndApi.csproj",
+              "RelativeToolTip": "BackEndApi.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-28T10:37:14.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\Team Week AI\\BackEndApi\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "D:\\Team Week AI\\BackEndApi\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-08-28T10:42:23.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "AiController.cs",
               "DocumentMoniker": "D:\\Team Week AI\\BackEndApi\\Controllers\\AiController.cs",
               "RelativeDocumentMoniker": "Controllers\\AiController.cs",
@@ -171,10 +207,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-21T13:04:14.781Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         },
@@ -182,6 +214,10 @@
           "DockedHeight": 25,
           "SelectedChildIndex": -1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{5a4e9529-b6a0-46b5-be4f-0f0b239bc0eb}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:1924764005:0:{13143d73-808b-4a2f-bebb-ccbe9c93fe37}"

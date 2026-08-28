@@ -95,3 +95,4 @@ D:\Team Week AI\BackEndApi\bin\Debug\net8.0\BackEndApi.pdb
 D:\Team Week AI\BackEndApi\obj\Debug\net8.0\BackEndApi.genruntimeconfig.cache
 D:\Team Week AI\BackEndApi\obj\Debug\net8.0\ref\BackEndApi.dll
 D:\Team Week AI\BackEndApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Team Week AI\BackEndApi\obj\Debug\net8.0\BackEndApi.sourcelink.json
