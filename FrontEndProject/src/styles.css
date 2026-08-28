@@ -1,0 +1,71 @@
+:root {
+  --bg-base: #0f1320;
+  --bg-elev-1: #171c2b;
+  --bg-elev-2: #1f2638;
+  --bg-input: #232b40;
+  --border-soft: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
+  --text-primary: #e8ecf1;
+  --text-muted: #8896ab;
+  --text-faint: #6b7a8d;
+  --accent: #6366f1;
+  --accent-2: #818cf8;
+  --accent-strong: #4f46e5;
+  --accent-glow: rgba(99, 102, 241, 0.45);
+  --success: #34d399;
+  --cyan: #22d3ee;
+  --teal: #2dd4bf;
+  --pink: #f472b6;
+  --amber: #fbbf24;
+  --violet: #a855f7;
+  --radius-lg: 1rem;
+  --radius-md: 0.75rem;
+  --radius-sm: 0.625rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-primary);
+  background-color: var(--bg-base);
+  background-image:
+    radial-gradient(900px circle at 10% -10%, rgba(99, 102, 241, 0.2), transparent 45%),
+    radial-gradient(760px circle at 95% 110%, rgba(124, 58, 237, 0.16), transparent 45%);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: rgba(99, 102, 241, 0.35);
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.28);
+  background-clip: padding-box;
+}

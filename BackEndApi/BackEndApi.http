@@ -1,0 +1,8 @@
+@BackEndApi_HostAddress = http://localhost:5163
+
+POST {{BackEndApi_HostAddress}}/api/ai/ask
+Content-Type: application/json
+
+"What are the office hours?"
+
+###
