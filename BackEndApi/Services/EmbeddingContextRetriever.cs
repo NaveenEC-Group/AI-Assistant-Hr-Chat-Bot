@@ -17,6 +17,11 @@ public sealed class EmbeddingContextRetriever : IContextRetriever
         _options = options.Value;
     }
 
+    public bool IsReady => _indexed is not null;
+
+    public Task WarmupAsync(CancellationToken cancellationToken = default) =>
+        EnsureIndexedAsync(cancellationToken);
+
     public async Task<IReadOnlyList<RetrievedChunk>> RetrieveAsync(string question, int topK, CancellationToken cancellationToken = default)
     {
         await EnsureIndexedAsync(cancellationToken).ConfigureAwait(false);

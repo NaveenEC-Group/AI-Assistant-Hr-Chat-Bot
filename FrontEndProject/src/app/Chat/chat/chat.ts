@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild, AfterViewChecked, NgZone, OnDestroy } from '@angular/core';
+import { Component, ElementRef, ViewChild, AfterViewChecked, OnInit, NgZone, OnDestroy } from '@angular/core';
 import { AiService } from '../../services/ai-service';
 
 export interface ChatMessage {
@@ -14,7 +14,7 @@ export interface ChatMessage {
   templateUrl: './chat.html',
   styleUrl: './chat.css',
 })
-export class Chat implements AfterViewChecked, OnDestroy {
+export class Chat implements OnInit, AfterViewChecked, OnDestroy {
   question = '';
   loading = false;
   messages: ChatMessage[] = [];
@@ -35,6 +35,11 @@ export class Chat implements AfterViewChecked, OnDestroy {
 
   constructor(private aiService: AiService, private zone: NgZone) {
     this.initSpeechRecognition();
+  }
+
+  ngOnInit(): void {
+    // Wake Render + pre-build vectors while the user reads the page / types.
+    this.aiService.warmup().subscribe();
   }
 
   ngAfterViewChecked(): void {

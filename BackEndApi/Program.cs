@@ -44,4 +44,20 @@ app.UseSwaggerUI();
 app.UseCors();
 app.UseAuthorization();
 app.MapControllers();
+
+// Pre-build embedding index in the background so the first user question is faster.
+_ = Task.Run(async () =>
+{
+    try
+    {
+        await Task.Delay(TimeSpan.FromSeconds(2)).ConfigureAwait(false);
+        var retriever = app.Services.GetRequiredService<IContextRetriever>();
+        await retriever.WarmupAsync().ConfigureAwait(false);
+    }
+    catch
+    {
+        // Warmup is best-effort; ask will build the index on demand.
+    }
+});
+
 app.Run();

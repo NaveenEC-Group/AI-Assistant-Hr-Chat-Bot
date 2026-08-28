@@ -8,14 +8,30 @@ namespace BackEndApi.Controllers
     public class AiController : ControllerBase
     {
         private readonly IAiService _aiService;
+        private readonly IContextRetriever _retriever;
         private readonly IKnowledgeBaseWriter _kbWriter;
         private readonly IDocumentTextExtractor _extractor;
 
-        public AiController(IAiService aiService, IKnowledgeBaseWriter kbWriter, IDocumentTextExtractor extractor)
+        public AiController(
+            IAiService aiService,
+            IContextRetriever retriever,
+            IKnowledgeBaseWriter kbWriter,
+            IDocumentTextExtractor extractor)
         {
             _aiService = aiService;
+            _retriever = retriever;
             _kbWriter = kbWriter;
             _extractor = extractor;
+        }
+
+        /// <summary>
+        /// Wakes the host and builds the embedding index so the first ask is faster.
+        /// </summary>
+        [HttpGet("warmup")]
+        public async Task<IActionResult> Warmup(CancellationToken cancellationToken)
+        {
+            await _retriever.WarmupAsync(cancellationToken).ConfigureAwait(false);
+            return Ok(new { ready = _retriever.IsReady });
         }
 
         [HttpPost("ask")]
