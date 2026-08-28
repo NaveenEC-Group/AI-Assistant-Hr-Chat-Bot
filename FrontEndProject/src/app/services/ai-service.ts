@@ -6,7 +6,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class AiService {
-  private apiUrl = 'https://ai-assistant-hr-chat-bot.onrender.com/api/ai';
+  // Relative URL so ng serve proxy handles Render/local API (avoids browser CORS).
+  private apiUrl = '/api/ai';
 
   constructor(private http: HttpClient) {}
 

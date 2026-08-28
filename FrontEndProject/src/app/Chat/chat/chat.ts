@@ -148,12 +148,33 @@ export class Chat implements AfterViewChecked, OnDestroy {
         this.shouldScroll = true;
       },
       error: (err) => {
-        const errorText = err?.error || err?.message || 'Something went wrong. Please try again.';
-        this.messages.push({ role: 'ai', text: errorText, timestamp: new Date() });
+        this.messages.push({
+          role: 'ai',
+          text: this.formatHttpError(err),
+          timestamp: new Date(),
+        });
         this.loading = false;
         this.shouldScroll = true;
       },
     });
+  }
+
+  private formatHttpError(err: any): string {
+    const body = err?.error;
+    if (typeof body === 'string' && body.trim()) return body;
+    if (body && typeof body === 'object' && !(body instanceof ProgressEvent)) {
+      if (typeof body.message === 'string') return body.message;
+      try {
+        return JSON.stringify(body);
+      } catch {
+        /* ignore */
+      }
+    }
+    if (err?.status === 0) {
+      return 'Could not reach the API. Check that the server is running (Render may take ~30s to wake).';
+    }
+    if (typeof err?.message === 'string' && err.message.trim()) return err.message;
+    return 'Something went wrong. Please try again.';
   }
 
   private pickImage(question: string, answer: string): string | undefined {
@@ -207,10 +228,9 @@ export class Chat implements AfterViewChecked, OnDestroy {
         this.shouldScroll = true;
       },
       error: (err) => {
-        const errorText = err?.error || err?.message || 'Upload failed. Please try again.';
         this.messages.push({
           role: 'ai',
-          text: typeof errorText === 'string' ? errorText : 'Upload failed. Please try again.',
+          text: this.formatHttpError(err),
           timestamp: new Date(),
         });
         this.uploading = false;
