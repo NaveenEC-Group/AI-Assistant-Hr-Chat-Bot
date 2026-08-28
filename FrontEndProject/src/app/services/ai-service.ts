@@ -6,18 +6,29 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class AiService {
+  private apiUrl = 'https://ai-assistant-hr-chat-bot.onrender.com/api/ai';
+
   constructor(private http: HttpClient) {}
 
   ask(question: string): Observable<string> {
-    return this.http.post('/api/ai/ask', JSON.stringify(question), {
-      headers: { 'Content-Type': 'application/json' },
-      responseType: 'text',
-    });
+    return this.http.post(
+      `${this.apiUrl}/ask`,
+      JSON.stringify(question),
+      {
+        headers: { 'Content-Type': 'application/json' },
+        responseType: 'text',
+      }
+    );
   }
 
   uploadDocument(file: File): Observable<{ added: number; message: string }> {
     const formData = new FormData();
     formData.append('file', file, file.name);
-    return this.http.post<{ added: number; message: string }>('/api/ai/upload', formData);
+
+    return this.http.post<{ added: number; message: string }>(
+      `${this.apiUrl}/upload`,
+      formData
+    );
   }
 }
+
